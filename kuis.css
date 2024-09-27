@@ -1,0 +1,124 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 10px 5px rgba(255, 65, 108, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(245, 166, 35, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px 5px rgba(255, 65, 108, 0.7);
+    }
+}
+
+form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: blink 1.5s infinite alternate;
+}
+
+h1 {
+    text-align: center;
+    color: #ff416c;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    background: #f0f4f8;
+    font-size: 14px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #ff416c, #f5a623);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #f5a623, #ff416c);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #ff416c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    margin-right: 15px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+.bold {
+    font-weight: bold;
+}
+.gender-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #4CAF50;
+    background-color: white;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gender-button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#selected-gender {
+    margin-top: 10px;
+    font-weight: bold;
+}
